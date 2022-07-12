@@ -1,4 +1,4 @@
-package __100
+package __99
 
 func twoSum(nums []int, target int) []int {
 	mList := make(map[int]int)

@@ -1,4 +1,4 @@
-package __100
+package __99
 
 func minPathSum(grid [][]int) int {
 	m, n := len(grid), len(grid[0])
@@ -18,10 +18,10 @@ func minPathSum(grid [][]int) int {
 	}
 	for i := 1; i < m; i++ {
 		for j := 1; j < n; j++ {
-			dp[i][j] = min(dp[i-1][j] + grid[i][j], dp[i][j-1] + grid[i][j])
+			dp[i][j] = min(dp[i-1][j]+grid[i][j], dp[i][j-1]+grid[i][j])
 		}
 	}
-	return dp[m - 1][n - 1]
+	return dp[m-1][n-1]
 }
 
 func min(x, y int) int {

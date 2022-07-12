@@ -1,9 +1,9 @@
-package __100
+package __99
 
 import "testing"
 
 func TestTwoSum(t *testing.T) {
-	nums := []int{2,7,11,15}
+	nums := []int{2, 7, 11, 15}
 	target := 9
 	result := []int{0, 1}
 	d := twoSum(nums, target)
@@ -11,7 +11,7 @@ func TestTwoSum(t *testing.T) {
 		t.Log("fail")
 	}
 
-	nums2 := []int{3,2,4}
+	nums2 := []int{3, 2, 4}
 	target2 := 6
 	result2 := []int{1, 2}
 	d2 := twoSum(nums2, target2)
@@ -19,7 +19,7 @@ func TestTwoSum(t *testing.T) {
 		t.Log("fail")
 	}
 
-	nums3 := []int{3,3}
+	nums3 := []int{3, 3}
 	target3 := 6
 	result3 := []int{0, 1}
 	d3 := twoSum(nums3, target3)
@@ -27,7 +27,6 @@ func TestTwoSum(t *testing.T) {
 		t.Log("fail")
 	}
 }
-
 
 func IntSliceEqualBCE(a, b []int) bool {
 	if len(a) != len(b) {
